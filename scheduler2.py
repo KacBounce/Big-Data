@@ -71,6 +71,7 @@ def generate_csv_outputs(station_timelines, total_times):
 
 def generate_gantt_chart_matplotlib(station_timelines):
     fig, ax = plt.subplots(figsize=(16, 10))  # Increase figure size for better clarity
+    
 
     # Generate a color map for products
     unique_products = {task['product'] for tasks in station_timelines.values() for task in tasks}
